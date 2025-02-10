@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Artesanal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos base - Desktop */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8B4513;
+        }
+
+        .menu-lista {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .menu-lista a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Hero */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://ejemplo.com/panaderia-bg.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .hero-content {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text {
+            flex: 1;
+            color: white;
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-icon {
+            font-size: 8em;
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* Productos */
+        .productos {
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .grid-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .producto-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .producto-icon {
+            font-size: 2.5em;
+            color: #8B4513;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">PanArt</div>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Pan Artesanal Recién Horneado</h1>
+                <p>Descubre la auténtica tradición panadera</p>
+                <button class="btn">Ver productos</button>
+            </div>
+            <i class="fas fa-bread-slice hero-icon"></i>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="productos">
+        <div class="grid-productos">
+            <!-- Repetir 9 veces -->
+            <div class="producto-card">
+                <i class="fas fa-croissant producto-icon"></i>
+                <h3>Croissants</h3>
+                <p>Deliciosos croissants de mantequilla</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="producto-card">
+                <i class="fas fa-baguette producto-icon"></i>
+                <h3>Baguette Francesa</h3>
+                <p>Clásica baguette crujiente y dorada</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card">
+                <i class="fas fa-seedling producto-icon"></i>
+                <h3>Pan Integral</h3>
+                <p>Elaborado con granos enteros y semillas</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card">
+                <i class="fas fa-cookie producto-icon"></i>
+                <h3>Galletas de Chocolate</h3>
+                <p>Con trozos de chocolate belga</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto-card">
+                <i class="fas fa-cupcake producto-icon"></i>
+                <h3>Muffin de Arándanos</h3>
+                <p>Esponjoso y relleno de frutos rojos</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="producto-card">
+                <i class="fas fa-cake-candles producto-icon"></i>
+                <h3>Tarta de Cumpleaños</h3>
+                <p>Personalizada con tus ingredientes favoritos</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto-card">
+                <i class="fas fa-pretzel producto-icon"></i>
+                <h3>Pretzels Artesanales</h3>
+                <p>Salados o con toppings dulces</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="producto-card">
+                <i class="fas fa-donut producto-icon"></i>
+                <h3>Donuts Glaseados</h3>
+                <p>Variedad de sabores y coberturas</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="producto-card">
+                <i class="fas fa-cheese producto-icon"></i>
+                <h3>Pan de Queso</h3>
+                <p>Receta brasileña auténtica</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo">PanArt</div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 PanArt. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
